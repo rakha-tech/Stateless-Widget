@@ -23,3 +23,4 @@ const Latimage({ Key? key }) : super(key: key);
     );
   }
 }
+
