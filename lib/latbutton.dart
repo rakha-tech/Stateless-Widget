@@ -5,10 +5,11 @@ const Latbutton({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context){
-    return Center(
-    child: ElevatedButton(
-        onPressed: () {}, child: Text("Tap Me!"),
-      ),
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        ElevatedButton(onPressed: () {}, child: Text("Click Me wlee!")),
+      ],
     );
   }
 }

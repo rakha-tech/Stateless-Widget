@@ -7,10 +7,11 @@ const Latscaffold({ Key? key }) : super(key: key);
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: Text("Latihan Scaffold"),
+        title: const Text("Halaman Scaffold"),
+        backgroundColor: Colors.deepPurpleAccent,
       ),
       body: Center(
-        child: Text("Hello World!"),
+        child: Text("Ini adalah halaman Scaffold"),
       ),
     );
   }

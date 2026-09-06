@@ -5,31 +5,33 @@ const Latdialog({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context){
-    return Center(
-      child: ElevatedButton(
-        onPressed: () => showDialog(
-          context: context,
-          builder: (context) => Dialog(
-            child: Padding(
-              padding: const EdgeInsets.all(20),
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        ElevatedButton(onPressed: () {
+          showDialog(context: context, builder: (BuildContext context) => Dialog(
+            child: 
+              Padding(padding: const EdgeInsets.all(8.0),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text("Ini adalah dialog"),
+                  const Text("This is a typical dialog."),
                   const SizedBox(height: 15),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
-                    child: const Text("Tutup"),
+                  ElevatedButton(onPressed: () {
+                    Navigator.pop(context);
+                  }, 
+                  child: const Text("Close")
                   ),
                 ],
-              ),
+              )
             ),
           ),
-        ),
+          );
+        }, 
         child: const Text("Show Dialog"),
-      ),
+        ),
+      ],
     );
   }
 }

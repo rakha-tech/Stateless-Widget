@@ -5,25 +5,42 @@ const Latcard({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context){
-    return Card(
-      elevation: 10,
-      shadowColor: Colors.black,
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          const ListTile(
-            leading: Icon(Icons.album),
-            title: Text('Judul Kartu'),
+    return Column(
+      children: [
+        Card(
+          child: Column(
+            children: [
+              ListTile(
+                leading: Image.network("https://static.vecteezy.com/system/resources/thumbnails/033/494/777/small/cute-chibi-girl-wearing-a-cat-hoodie-ai-generative-png.png"),
+                title: Text("Judul Kartu"),
+                subtitle: Text("Deskripsi Kartu"),
+              )
+            ],
           ),
-
-          TextButton(
-            onPressed: () {
-              print("Tombol ditekan");
-            },
-            child: const Text("Tombol Aksi"),
+        ),
+        Card(
+          child: Column(
+            children: [
+              ListTile(
+                leading: Image.network("https://static.vecteezy.com/system/resources/thumbnails/033/494/777/small/cute-chibi-girl-wearing-a-cat-hoodie-ai-generative-png.png"),
+                title: Text("Judul Kartu"),
+                subtitle: Text("Deskripsi Kartu"),
+              )
+            ],
           ),
-        ]
-      )
+        ),
+        Card(
+          child: Column(
+            children: [
+              ListTile(
+                leading: Image.network("https://static.vecteezy.com/system/resources/thumbnails/033/494/777/small/cute-chibi-girl-wearing-a-cat-hoodie-ai-generative-png.png"),
+                title: Text("Judul Kartu"),
+                subtitle: Text("Deskripsi Kartu"),
+              )
+            ],
+          ),
+        )
+      ],
     );
   }
 }

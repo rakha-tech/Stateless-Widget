@@ -10,12 +10,7 @@ const Latlistview({ Key? key }) : super(key: key);
   Widget build(BuildContext context){
     return ListView(
       children: [
-        Text(
-          item, 
-          style: const TextStyle(
-            fontSize: 48,
-          ),
-        ),
+        Text(item, style: const TextStyle(fontSize: 48)),
       ],
     );
   }
